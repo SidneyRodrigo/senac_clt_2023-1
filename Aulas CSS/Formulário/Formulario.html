@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Formulario.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- <script src="http://code.jquery.com/jquery-1.11.1.js%22%3E"></script>
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js%22%3E"></script> -->
+
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Formulário</h1>
+            <p>Complete suas informações</p><br>  
+        </div>   
+    
+    <form id="form" class="form">
+        <fieldset class="grupo">
+            <legend>Formulário de Freelancer</legend>
+            <div class="form-control">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" placeholder="Nome...">
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div><br>
+            <div class="form-control">
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome...">
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div><br>
+            <div class="form-control">
+                <label for="telefone"><strong>Telefone:</strong></label>
+                <input type="tel" id="telefone" class="input-padrao" placeholder="(xx) xxxxx-xxxx">
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div><br>
+            <div class="form-control">
+                <label for="email"><strong>E-mail:</strong></label>
+                <input type="email" name="email" id="email" placeholder="E-mail...">
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div><br>
+            <div>
+                <label><strong>Mensagem:</strong></label><br>
+                <textarea rows="6" cols="10" name="mensagem" id="mensagem" placeholder="Mensagem..."></textarea>
+            </div><br>
+            <div>
+                <label><strong>Língua Aplicada:</strong></label>
+                <select id="lingua">
+                    <option selected disabled value="">Selecione...</option>
+                    <option>Inglês</option>
+                    <option>Espanhol</option>
+                    <option>Francês</option>
+                    <option>Português(PT-BR)</option>
+                </select>
+            </div><br>
+            <div>
+                <label><strong>Protótipo (Requisitos):</strong></label>
+                <input type="file">
+            </div><br>
+            <div>
+                <label><strong>Quais linguagens você prefere?</strong></label><br>
+                <select id="linguagens" multiple>
+                    <option value="java">Java</option>
+                    <option value="c">C</option>
+                    <option value="c++">C++</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                </select>
+            </div><br>
+            <div>
+                <label><strong>Banco de Dados:</strong></label>
+                <input type="checkbox" name="database1" id="database1" value="MySQL">
+                <label for="database1">MySQL</label> |
+                <input type="checkbox" name="database2" id="database2" value="Postgresql">
+                <label for="database2">Postgresql</label> |
+                <input type="checkbox" name="database3" id="database3" value="MongoDB">
+                <label for="database2">MongoDB</label> |
+                <input type="checkbox" name="na" id="na" value="N/A">
+                <label for="database2">N/A</label> |
+                <input type="checkbox" name="outra" id="outra" value="Outra">
+                <label for="database2">Outra</label> 
+            </div><br>
+            <div>
+                <label><strong>Turno para reuniões:</strong></label>
+                <label>
+                    <input type="radio" name="manha" value="manha">Manhã
+                </label> |
+                <label>
+                    <input type="radio" name="tarde" value="tarde">Tarde
+                </label> |
+                <label>
+                    <input type="radio" name="noite" value="noite">Noite
+                </label>
+            </div><br>
+            <div>
+                <label><strong>Horário Sugerido:</strong></label>
+                <input class="horario" type="time">
+            </div><br>
+            <div>
+                <label for="data_entrega"><strong>Data de Entrega Prevista:</strong></label></label>
+                <input type="date">
+            </div><br><br>
+            <input class="botao" type="submit">
+            <input class="botao" type="reset" value="Limpar"><br><br>
+        </fieldset>
+    </form>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/fb20750c68.js" crossorigin="anonymous"></script>
+</body>
+</html>
